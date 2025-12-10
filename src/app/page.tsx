@@ -1,65 +1,104 @@
-import Image from "next/image";
+'use client'
+
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="bg-gray-50 w-full min-h-screen text-black ">
+      <div className="container mx-auto  min-h-screen bg-white ">
+        <Header />
+
+        <div className="pt-[124px]">
+          <div className="bg-[url('/images/chale.png')] bg-cover bg-center w-full h-[75vh] flex justify-center p">
+
+            {/* CAIXA DE TEXTO */}
+            <div className="bg-black/60 w-[90%] md:w-3/5 lg:w-2/5 text-white px-6 md:px-10 py-10 flex flex-col justify-center items-center gap-8 md:gap-14">
+
+              <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center">
+                CHALÉ FRUTOS DO CAMPO
+              </h1>
+
+              <p className="text-center text-sm md:text-lg lg:text-xl leading-relaxed">
+                Trabalhamos para servir o melhor da nossa região, além de diversos
+                produtos do interior do nosso país, agregando frutas selecionadas
+                aos produtos artesanais, como queijos, doces, biscoitos, linguiças,
+                mel, bolachas, manteigas e salames.
+                <br /><br />
+                Venha também prestigiar a famosa coxinha de massa de milho, simplesmente
+                irresistível, pastéis, sucos de frutas, café, lanches e muito mais.
+                Sejam sempre bem-vindos! ❤️
+              </p>
+
+            </div>
+          </div>
+
+          <section className="flex flex-col items-center px-6 md:px-10 lg:px-20">
+
+            <div className="text-center border-y border-black text-2xl md:text-3xl font-semibold my-10">
+              NOSSA <span className="text-amber-300">HISTÓRIA</span>
+            </div>
+
+            {/* BLOCO 1 */}
+            <div className="flex flex-col md:flex-row w-full mb-16 gap-6">
+              <div className="md:w-1/2 flex items-center text-lg md:text-xl lg:text-2xl">
+                <p>
+                  Somos a concretização de um modesto sonho. O Chalé Frutos do Campo abriu suas portas em 29 de outubro de 2015, na encantadora cidade de Jarinu, no estado de São Paulo. Essa ideia começou a tomar forma anos antes, em um momento em que parecia quase impossível, mas, com a benevolência divina, transformou-se em realidade.
+                </p>
+              </div>
+
+              <div className="md:w-1/2 flex justify-center">
+                <img src="/images/chale.png" className="w-full rounded-lg object-cover" />
+              </div>
+            </div>
+
+            {/* BLOCO 2 */}
+            <div className="flex flex-col md:flex-row-reverse w-full mb-16 gap-6">
+              <div className="md:w-1/2 flex items-center text-lg md:text-xl lg:text-2xl">
+                <p>
+                  Com muitos produtores de frutas de qualidade na região, a ideia de criar o chalé se tornou ainda mais atraente, destacando o que de melhor o nosso interior tem a oferecer. Além disso, oferecemos produtos mineiros de excelente qualidade e sabor. Também dispomos de vinhos, cachaças e licores, tanto da região quanto de Santa Catarina.
+                </p>
+              </div>
+
+              <div className="md:w-1/2 flex justify-center">
+                <img src="/images/chease.png" className="w-full rounded-lg object-cover" />
+              </div>
+            </div>
+
+            {/* BLOCO 3 */}
+            <div className="flex flex-col md:flex-row w-full mb-16 gap-6">
+              <div className="md:w-1/2 flex items-center text-lg md:text-xl lg:text-2xl">
+                <p>
+                  Sendo assim, o Chalé Frutos do Campo tornou-se um ponto de atração para moradores da região e também para visitantes de fora. Devido à grande quantidade de chácaras na área, muitos turistas optam por alugá-las para passar festas e finais de semana, e frequentemente fazem uma parada em nosso estabelecimento. Sempre proporcionamos um excelente atendimento a todos os nossos clientes. ❤️
+                </p>
+              </div>
+
+              <div className="md:w-1/2 flex justify-center">
+                <img src="/images/tables.png" className="w-full rounded-lg object-cover" />
+              </div>
+            </div>
+
+          </section>
+
+          <Footer />
+
+
+
+          
+
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
     </div>
   );
 }
