@@ -2,12 +2,26 @@
 
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { Products } from "@/components/Products";
+import { Card, CardContent } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { CarouselImg } from "@/data/CarouselImg";
+import { useState } from "react";
+
+
 
 export default function Home() {
+
+  
+
+ 
+
   return (
+    
     <div className="bg-gray-50 w-full min-h-screen text-black ">
       <div className="container mx-auto  min-h-screen bg-white ">
-        <Header />
+        
+      <Header />
 
         <div className="pt-[124px]">
           <div className="bg-[url('/images/chale.png')] bg-cover bg-center w-full h-[75vh] flex justify-center p">
@@ -80,11 +94,13 @@ export default function Home() {
 
           </section>
 
+          <Products />
+
           <Footer />
 
 
 
-          
+
 
         </div>
 

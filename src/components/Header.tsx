@@ -1,9 +1,9 @@
 export const Header = () => {
     return (
-        <header className="w-full flex flex-col items-center  ">
+        <header className="w-full flex flex-col items-center   ">
 
             {/* NAV */}
-            <div className="flex flex-col md:flex-row w-full p-5 items-center gap-4 fixed bg-white">
+            <div className="flex flex-col md:flex-row w-full p-5 items-center gap-4 fixed z-999 bg-white">
 
                 {/* Esquerda */}
                 <div className="border-b border-black h-7 w-full md:w-full flex justify-center md:justify-end gap-5 text-sm md:text-base">
