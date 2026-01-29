@@ -23,11 +23,11 @@ export default function Home() {
         
       <Header />
 
-        <div className="pt-[124px]">
-          <div className="bg-[url('/images/chale.png')] bg-cover bg-center w-full h-[75vh] flex justify-center lg:mt-7 mt-2">
+        <div className="pt-[124px] ">
+          <div className="bg-[url('/images/chale.png')] bg-cover bg-center w-full h-[75vh] flex justify-center ">
 
             {/* CAIXA DE TEXTO */}
-            <div className="bg-black/60 w-[90%] md:w-3/5 lg:w-2/5 text-white px-6 md:px-10 py-10 flex flex-col justify-center items-center gap-8 md:gap-14  ">
+            <div className="bg-black/60 max-w-3xl mx-4 px-6 py-10 text-white text-center ">
 
               <h1 className="text-xl md:text-2xl lg:text-xl font-bold text-center mt-15">
                 CHALÉ FRUTOS DO CAMPO
@@ -49,7 +49,7 @@ export default function Home() {
 
           
 
-          <section className="flex flex-col items-center px-6 md:px-10 lg:px-20">
+          <section id="historia" className="flex flex-col items-center px-6 md:px-10 lg:px-20 scroll-mt-46 md:scroll-mt-38">
 
             <div className="text-center text-white border-y border-white text-2xl md:text-3xl font-semibold my-10">
               NOSSA <span className="text-amber-300">HISTÓRIA</span>

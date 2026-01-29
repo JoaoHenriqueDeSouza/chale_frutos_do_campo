@@ -7,10 +7,11 @@ export const Footer = () => {
         bg-amber-950
         text-white
         px-6 py-16
+        scroll-mt-36 md:scroll-mt-32
       "
     >
       {/* TÍTULO */}
-      <h2 className="mb-12 text-center text-2xl md:text-4xl font-black italic tracking-wide">
+      <h2 className="mb-12 text-center text-2xl md:text-4xl font-black italic tracking-wide border-y border-white">
         VENHA NOS <span className="text-amber-300">CONHECER</span>
       </h2>
 
@@ -63,13 +64,13 @@ export const Footer = () => {
         <div className="flex-1 flex flex-col gap-8">
           {/* REDES */}
           <div className="flex justify-center md:justify-end gap-4">
-            <a href="#">
+            <a href="https://www.instagram.com/chale_frutos_do_campo/">
               <img
                 src="/images/instagram.png"
                 className="w-10 md:w-12 opacity-90 hover:opacity-100"
               />
             </a>
-            <a href="#">
+            <a href="https://www.facebook.com/p/Chal%C3%A9-Frutos-do-Campo-100063530111333/?locale=pt_BR">
               <img
                 src="/images/facebook.png"
                 className="w-10 md:w-12 opacity-90 hover:opacity-100"

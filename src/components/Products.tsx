@@ -15,11 +15,11 @@ export const Products = () => {
   const [activeImg, setActiveImg] = useState(0)
 
   return (
-    <section className="w-full flex justify-center px-4 mb-16">
-      <div className="w-full max-w-6xl bg-gradient-to-b from-amber-800 to-amber-950 rounded-xl shadow-xl p-6 md:p-10">
+    <section id="products" className="w-full flex justify-center px-4 mb-16 scroll-mt-50 md:scroll-mt-40">
+      <div className="w-full max-w-6xl bg-linear-to-b from-amber-800 to-amber-950 rounded-xl shadow-xl p-6 md:p-10">
 
         {/* TÍTULO */}
-        <h1 className="text-center border-y border-black text-xl md:text-3xl font-semibold mb-8 text-white">
+        <h1 className="text-center border-y border-white text-xl md:text-3xl font-semibold mb-8 text-white">
           PRODUTOS <span className="text-yellow-300">CASEIROS</span> E DE{" "}
           <span className="text-yellow-300">QUALIDADE</span>
         </h1>
