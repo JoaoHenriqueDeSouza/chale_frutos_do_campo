@@ -12,9 +12,9 @@ export const Header = () => {
             <div className="flex  flex-col md:flex-row w-full px-5 items-center gap-4 fixed  z-999  pb-1 bg-[url('/images/header.png')] bg-center font-bold border-b border-black  ">
 
                 {/* Esquerda */}
-                <div className="border-b-2 border-white h-7 w-full md:w-full hidden md:flex justify-center md:justify-end gap-5 text-sm md:text-base text-white">
+                <div className="border-b-2 border-white  w-full md:w-full hidden md:flex justify-center md:justify-end gap-5 text-sm md:text-base text-white whitespace-nowrap">
                     <a href="#">QUEM SOMOS</a>
-                    <a href="#historia" className="mr-5">NOSSA HISTÓRIA</a>
+                    <a href="#historia" className="mr-5 ">NOSSA HISTÓRIA</a>
                     
                 </div>
 

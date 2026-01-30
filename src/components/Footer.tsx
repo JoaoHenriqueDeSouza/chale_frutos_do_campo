@@ -51,11 +51,13 @@ export const Footer = () => {
               <h3 className="text-lg md:text-xl font-bold text-amber-300">
                 TELEFONE
               </h3>
-              <p className="text-sm md:text-base text-amber-100 leading-relaxed">
-                (11) 4016-5424
-                <br />
-                (11) 98861-2636
-              </p>
+              <a href="https://wa.me/5511988612636" className="hover:underline cursor-pointer">
+                <p className="text-sm md:text-xl text-amber-100 leading-relaxed flex items-center gap-2  ">
+                  (11) 98861-2636
+                  <img src="/images/whatsapp.png" className="w-6" />
+                </p>
+              </a>
+
             </div>
           </div>
         </div>
@@ -64,7 +66,7 @@ export const Footer = () => {
         <div className="flex-1 flex flex-col gap-8">
           {/* REDES */}
           <div className="flex justify-center md:justify-end gap-4">
-            <a href="https://www.instagram.com/chale_frutos_do_campo/">
+            <a href="https://www.instagram.com/chale_frutosdocampo/">
               <img
                 src="/images/instagram.png"
                 className="w-10 md:w-12 opacity-90 hover:opacity-100"

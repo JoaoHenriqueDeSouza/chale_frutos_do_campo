@@ -10,6 +10,9 @@ import {
   CarouselNext,
   CarouselPrevious
 } from "./ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
+
+
 
 export const Products = () => {
   const [activeImg, setActiveImg] = useState(0)
@@ -34,7 +37,15 @@ export const Products = () => {
         </div>
 
         {/* CARROSSEL */}
-        <Carousel opts={{ dragFree: true }} className="w-full">
+        <Carousel
+          opts={{ dragFree: true }}
+          className="w-full"
+          plugins={[
+            Autoplay({
+              delay: 2000,
+            }),
+          ]}
+        >
           <CarouselContent className="-ml-2">
 
             {CarouselImg.map((item, index) => (

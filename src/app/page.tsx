@@ -27,13 +27,13 @@ export default function Home() {
           <div className="bg-[url('/images/chale.png')] bg-cover bg-center w-full h-[75vh] flex justify-center ">
 
             {/* CAIXA DE TEXTO */}
-            <div className="bg-black/60 max-w-3xl mx-4 px-6 py-10 text-white text-center ">
+            <div className="bg-black/60 max-w-3xl mx-4 px-6 py-10 text-white text-center flex flex-col justify-center gap-10">
 
-              <h1 className="text-xl md:text-2xl lg:text-xl font-bold text-center mt-15">
+              <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mt-15">
                 CHALÉ FRUTOS DO CAMPO
               </h1>
 
-              <p className="text-center text-sm md:text-lg lg:text-xl leading-relaxed">
+              <p className="text-center text-sm md:text-lg lg:text-2xl leading-relaxed">
                 Trabalhamos para servir o melhor da nossa região, além de diversos
                 produtos do interior do nosso país, agregando frutas selecionadas
                 aos produtos artesanais, como queijos, doces, biscoitos, linguiças,
@@ -77,7 +77,7 @@ export default function Home() {
               </div>
 
               <div className="md:w-1/2 flex justify-center">
-                <img src="/images/chease.png" className="w-full rounded-lg object-cover" />
+                <img src="/images/chale-typography.jpg" className="w-full rounded-lg object-cover" />
               </div>
             </div>
 
