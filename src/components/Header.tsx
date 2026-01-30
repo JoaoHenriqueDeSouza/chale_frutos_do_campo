@@ -14,9 +14,12 @@ export const Header = () => {
 
                 {/* Esquerda */}
                 <div className="border-b-2 border-white  w-full md:w-full hidden md:flex justify-center md:justify-end gap-5 text-sm md:text-base text-white whitespace-nowrap">
-                    <a href="#">QUEM SOMOS</a>
+                    <Link href="/#aboutus" scroll onClick={() => setMobileMenu(false)}>QUEM SOMOS</Link>
+                    <Link href="/#historia" scroll className="mr-5" onClick={() => setMobileMenu(false)}>NOSSA HISTÓRIA</Link>
+
+
                     <a href="#historia" className="mr-5 ">NOSSA HISTÓRIA</a>
-                    
+
                 </div>
 
                 {/* Logo / Título */}
@@ -24,23 +27,23 @@ export const Header = () => {
 
                 {mobileMenu &&
                     <div className="md:hidden p-4  flex flex-col gap-5 items-center text-xl text-white font-black italic">
-                        <link href="/#"   onClick={() => setMobileMenu(false)}>QUEM SOMOS</link>
-                        <link href="/#historia"  onClick={() => setMobileMenu(false)}>NOSSA HISTÓRIA</link>
-                        <link href="/#products" onClick={() => setMobileMenu(false)}>PRODUTOS</link>
-                        <link href="/#footer" onClick={() => setMobileMenu(false)}>CONTATOS</link>
+                        <Link href="/#aboutus" scroll onClick={() => setMobileMenu(false)}>QUEM SOMOS</Link>
+                        <Link href="/#historia" scroll onClick={() => setMobileMenu(false)}>NOSSA HISTÓRIA</Link>
+                        <Link href="/#products" scroll onClick={() => setMobileMenu(false)}>PRODUTOS</Link>
+                        <Link href="/#footer" scroll onClick={() => setMobileMenu(false)}>CONTATOS</Link>
                     </div>
 
                 }
 
                 {/* {Icone menu mobile} */}
                 <div className="md:hidden relative  w-8 h-8 mb-[-5] flex justify-center items-center rounded-full">
-                    <button onClick={() => setMobileMenu(!mobileMenu)} className="cursor-pointer"><img src={`/images/${mobileMenu?'Chevron_Up.png':'Chevron_Down.png'}`} alt="" /></button>
+                    <button onClick={() => setMobileMenu(!mobileMenu)} className="cursor-pointer"><img src={`/images/${mobileMenu ? 'Chevron_Up.png' : 'Chevron_Down.png'}`} alt="" /></button>
                 </div>
 
                 {/* Direita */}
                 <div className="text-white border-b-2 border-white h-7 w-full md:w-full hidden md:flex justify-center md:justify-start gap-5 text-sm md:text-base">
-                    <a href="#products" className="ml-5">PRODUTOS</a>
-                    <a href="#footer" className="">CONTATOS</a>
+                    <Link href="/#products" scroll className="ml-5" onClick={() => setMobileMenu(false)}>PRODUTOS</Link>
+                    <Link href="/#footer" scroll onClick={() => setMobileMenu(false)}>CONTATOS</Link>
                 </div>
 
 

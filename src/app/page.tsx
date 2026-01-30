@@ -23,7 +23,7 @@ export default function Home() {
         
       <Header />
 
-        <div className="pt-[124px] ">
+        <div id="#aboutus" className="pt-[124px] ">
           <div className="bg-[url('/images/chale.png')] bg-cover bg-center w-full h-[75vh] flex justify-center ">
 
             {/* CAIXA DE TEXTO */}
