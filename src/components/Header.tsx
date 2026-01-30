@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Link from "next/link"
 
 export const Header = () => {
 
@@ -23,10 +24,10 @@ export const Header = () => {
 
                 {mobileMenu &&
                     <div className="md:hidden p-4  flex flex-col gap-5 items-center text-xl text-white font-black italic">
-                        <a href="#" onClick={() => setMobileMenu(false)}>QUEM SOMOS</a>
-                        <a href="#historia" onClick={() => setMobileMenu(false)}>NOSSA HISTÓRIA</a>
-                        <a href="#products" onClick={() => setMobileMenu(false)}>PRODUTOS</a>
-                        <a href="#footer" onClick={() => setMobileMenu(false)}>CONTATOS</a>
+                        <link href="/#"   onClick={() => setMobileMenu(false)}>QUEM SOMOS</link>
+                        <link href="/#historia"  onClick={() => setMobileMenu(false)}>NOSSA HISTÓRIA</link>
+                        <link href="/#products" onClick={() => setMobileMenu(false)}>PRODUTOS</link>
+                        <link href="/#footer" onClick={() => setMobileMenu(false)}>CONTATOS</link>
                     </div>
 
                 }
