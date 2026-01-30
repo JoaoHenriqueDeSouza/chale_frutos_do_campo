@@ -16,10 +16,6 @@ export const Header = () => {
                 <div className="border-b-2 border-white  w-full md:w-full hidden md:flex justify-center md:justify-end gap-5 text-sm md:text-base text-white whitespace-nowrap">
                     <Link href="/#aboutus" scroll onClick={() => setMobileMenu(false)}>QUEM SOMOS</Link>
                     <Link href="/#historia" scroll className="mr-5" onClick={() => setMobileMenu(false)}>NOSSA HISTÓRIA</Link>
-
-
-                    <a href="#historia" className="mr-5 ">NOSSA HISTÓRIA</a>
-
                 </div>
 
                 {/* Logo / Título */}
