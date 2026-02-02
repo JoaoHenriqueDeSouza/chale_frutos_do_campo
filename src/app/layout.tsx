@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Chalé frutos do campo",
   description: "produtos caseiros",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
